@@ -1,0 +1,66 @@
+body {
+    font-size: 25px;
+}
+
+
+div {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items:center;
+    justify-content: center;
+}
+
+Button {
+    font-size: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(216, 216, 216);
+    border-radius: 6px;
+}
+Button:hover {
+    background-color: rgb(216, 215, 215);
+}
+Button:active {
+    background-color: rgb(225, 225, 225);
+ }
+
+ input {
+    font-size: 18px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(216, 216, 216);
+    border-radius: 6px;
+}
+input:hover {
+    background-color: rgb(216, 215, 215);
+}
+input:active {
+    background-color: rgb(225, 225, 225);
+}
+
+#CheckBoxLabel {
+    cursor: pointer;
+}
+#checkBox, #visaBtn, #masterBtn, #paypalBtn {
+    cursor: pointer;
+}
+
+
+ #cLabel {
+    margin-bottom: 150px;
+ }
+
+ 
+ #counterBtns {
+    margin-bottom: 150px;
+ }
+
+ 
+ #rollBtn {
+    margin-bottom: 150px;
+ }
+
+  
+ #paymentLabel {
+    margin-bottom: 150px;
+ }
