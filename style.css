@@ -27,6 +27,7 @@ Button {
     border-width: 1px;
     background-color:rgb(255, 254, 254);
     border-color: rgb(216, 216, 216);
+    color: black;
     border-radius: 3px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
