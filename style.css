@@ -1,5 +1,5 @@
 body {
-    font-size: 25px;
+    font-size: 18px;
 }
 
 
@@ -11,7 +11,8 @@ div {
 }
 
 Button {
-    font-size: 20px;
+    font-size: 16px;
+    display: flex;
     border-style: solid;
     border-width: 1px;
     border-color: rgb(216, 216, 216);
@@ -25,7 +26,8 @@ Button:active {
  }
 
  input {
-    font-size: 18px;
+    font-size: 13px;
+     display: flex;
     border-style: solid;
     border-width: 1px;
     border-color: rgb(216, 216, 216);
@@ -38,29 +40,11 @@ input:active {
     background-color: rgb(225, 225, 225);
 }
 
-#CheckBoxLabel {
-    cursor: pointer;
-}
-#checkBox, #visaBtn, #masterBtn, #paypalBtn {
+#CheckBoxLabel, #checkBox, #visaBtn, #masterBtn, #paypalBtn{
     cursor: pointer;
 }
 
 
- #cLabel {
-    margin-bottom: 150px;
- }
-
- 
- #counterBtns {
-    margin-bottom: 150px;
- }
-
- 
- #rollBtn {
-    margin-bottom: 150px;
- }
-
-  
- #paymentLabel {
+ #cLabel, #counterBtns, #rollBtn, #paymentLabel {
     margin-bottom: 150px;
  }
