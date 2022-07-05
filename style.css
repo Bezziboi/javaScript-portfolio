@@ -1,7 +1,15 @@
 body {
     font-size: 18px;
+    background-color: aliceblue;
 }
 
+p {
+    background-color: rgb(255, 255, 255);
+    padding: 2px;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
 div {
     display: flex;
@@ -13,10 +21,14 @@ div {
 Button {
     font-size: 16px;
     display: flex;
+    margin-right: 6px;
+    margin-top: 6px;
     border-style: solid;
     border-width: 1px;
+    background-color:rgb(255, 254, 254);
     border-color: rgb(216, 216, 216);
     border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 Button:hover {
     background-color: rgb(216, 215, 215);
@@ -25,13 +37,14 @@ Button:active {
     background-color: rgb(225, 225, 225);
  }
 
- input {
+input {
     font-size: 13px;
-     display: flex;
+    display: flex;
     border-style: solid;
     border-width: 1px;
     border-color: rgb(216, 216, 216);
     border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 input:hover {
     background-color: rgb(216, 215, 215);
