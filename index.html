@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Some small programs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Hypotnuse calculator practice program -->
+        <section>
+            <div class="content">
+                
+                <div class="wrapper">
+                    <h1 class="hypotnuseH1">-Hypotenuse calculator practice program-</h1>
+                    <div class="inputAB">
+                        <div class="inputA">
+                            <label for="aText"><strong>a</strong> <em>Leg</em></label>
+                            <input type="text"  onfocus="this.value=''" placeholder="Enter A" id="aText">
+                        </div>
+                        <div class="inputB">
+                            <label for="bText"><strong>b</strong> <em >Leg</em></label>
+                            <input type="text"  onfocus="this.value=''" placeholder="Enter B" id="bText">
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <button type="button" id="submitButton">Submit</button>
+                        <label id="cLabel">C &#8776; (a&sup2+b&sup2)<span>2</span></label>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Counter program -->
+        <section>
+            <div class="content">
+                <h1>-Counter program-</h1>
+                <label id="countLabel">0</label>
+                <button id="decreaseBtn">decrease</button>
+                <button id="resetBtn">reset</button>
+                <button id="increaseBtn">increase</button> 
+            </div>
+        </section>
+
+        <!-- Random number generator -->
+        <section>
+            <div class="content">
+                <h1>-Random number generator-</h1>
+                <label id="xLabel">0-</label>
+                <label id="zLabel">0-</label>
+                <label id="yLabel">0</label>
+                <button type="button" id="rollBtn">roll</button>
+            </div>
+        </section>
+
+        <!-- Checked property -->
+        <section>
+            <div class="content">
+                <h1>-Checked property-</h1>
+                <label for="checkBox" id="CheckBoxLabel">Subscribe</label>
+                <input type="checkbox" id="checkBox">
+                <label for="visaBtn" id="CheckBoxLabel">Visa</label>
+                <input type="radio" name="card" id="visaBtn">
+                <label for="masterBtn" id="CheckBoxLabel">MasterCard</label>
+                <input type="radio" name="card" id="masterBtn">
+                <label for="paypalBtn" id="CheckBoxLabel">PayPal</label>
+                <input type="radio" name="card" id="paypalBtn">
+                <button id="submitBtn">submit</button>
+                <label id="subscribeLabel"></label>
+                <label id="paymentLabel"></label> 
+            </div>
+        </section>
+
+        <!-- Number Guessing Game -->
+        <section>
+            <div class="content">
+                <h1>-Number Guessing Game-</h1>  
+                <p2 id="guessP">Pick a # between 1-10</p2>        
+                <label for="guessInput">Enter your guess:</label>
+                <input id="guessInput">
+                <input type="submit" id="guessBtn"> 
+                <label id="guessAnswer"></label>
+            </div>
+        </section>
+
+        <!-- Temperature conversion program -->
+        <section>
+            <div class="content">
+                <h1>-Temperature conversion program-</h1>
+                <label>Enter a temperature</label>
+                <input type="text" id="tempInput">
+                <label>Conver to: </label>
+                <label for="celsiusBtn">Celsius</label>
+                <input type="radio" name="tempRadio" id="celsiusBtn">
+                <label for="fahrenheitBtn">Fahrenheit</label>
+                <input type="radio" name="tempRadio" id="fahrenheitBtn">
+                <button id="tempBtn">Submit</button>
+                <label id="tempLabel"></label>
+            </div>
+        </section>
+    </div>
+
+
+
+
+    
+    <script src="index.js"></script>
+</body>
+</html>
