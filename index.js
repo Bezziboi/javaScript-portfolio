@@ -63,44 +63,6 @@ document.getElementById("rollBtn").onclick = function() {
 
 
 {
-document.getElementById("submitBtn").onclick = function() {
-    
-    const checkBox = document.getElementById("checkBox");
-    const visaBtn = document.getElementById("visaBtn");
-    const masterBtn = document.getElementById("masterBtn");
-    const paypalBtn = document.getElementById("paypalBtn");
-    const subscribeLabel = document.getElementById("subscribeLabel");
-    const paymentLabel = document.getElementById("paymentLabel");
-
-    if(checkBox.checked == true) {
-        subscribeLabel.innerHTML = "You are subscribed!";
-    }
-    else {
-        subscribeLabel.innerHTML = "You are Not subscribed!";
-    }
-
-    if(visaBtn.checked == true) {
-        paymentLabel.innerHTML = "You are paying with a Visa!";
-    }
-    else if(masterBtn.checked == true) {
-        paymentLabel.innerHTML = "You are paying with a MasterCard!";
-    }
-    else if(paypalBtn.checked == true) {
-        paymentLabel.innerHTML = "You are paying with a PayPal!";
-    }
-    else {
-        paymentLabel.innerHTML = "You must select a payment type!";
-    }
-}}
-
-
-
-
-
-
-
-
-{
     let guessAnswer = document.getElementById("guessAnswer");
 const answer = Math.floor(Math.random() * 10 + 1);
 let guesses = 0;
@@ -122,47 +84,6 @@ document.getElementById("guessBtn").onclick =  function() {
 
 
 
-
-
-
-
-
-
-
-{
-let tempBtn = document.getElementById("tempBtn");
-let tempInput = document.getElementById("tempInput");
-let celsiusBtn = document.getElementById("celsiusBtn");
-let fahrenheitBtn = document.getElementById("fahrenheitBtn");
-let tempLabel = document.getElementById("tempLabel");
-
-tempBtn.onclick = function() {
-    let temp;
-    if(celsiusBtn.checked) {
-        temp = tempInput.value;
-        temp = Number(temp);
-        temp = toCelsius(temp);
-        tempLabel.innerHTML = temp + "°C";
-    }
-    else if(fahrenheitBtn.checked) {
-        temp = tempInput.value;
-        temp = Number(temp);
-        temp = toFahrenheit(temp);
-        tempLabel.innerHTML = temp + "°F";
-    }
-    else {
-        tempLabel.innerHTML = "Select a unit"
-    }
-} 
-
-function toCelsius(temp) {
-    return (temp - 32) * (5/9);
-}
-
-function toFahrenheit(temp) {
-    return temp * 9 / 5 + 32;
-}
-}
 
 
 
