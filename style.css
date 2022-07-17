@@ -193,38 +193,29 @@ body {
     transition: all 0.3s;
 }
 .timerBtn:hover{
-    opacity: 0.8;
+    opacity: 0.6;
 }
 .timerBtn:active{
-    opacity: 0.6;
+    opacity: 0.4;
 }
 
 .choiceBtn{
-    line-height: 30px;
-    width: 115px;
-    font-family: cursive, 'Brush Script MT';
-    border-radius: 10px;
+    background: none;
+    border: none;
+    outline: none;
     cursor: pointer;
-    font-weight: bold;
-    transition: all 0.3s;
+    font-size: 40px;
+    transition: 100ms;
 }
 .choiceBtn:hover{
-    opacity: 0.8;
-}
-.choiceBtn:active{
-    opacity: 0.6;
+    transform: scale(1.2);
 }
 #rpsGame{
     font-family: cursive, 'Brush Script MT';
-    border: 3px solid;
+    border: 0;
     border-radius: 25px;
     padding: 10px;
-    background-color: lightgrey;
     text-align: center;
-}
-#playerText{
-    color: rgb(14, 14, 177);
-}
-#computerText{
-    color: rgb(173, 7, 7);
+    background: linear-gradient(-135deg, #f1f0f0, #f5f5f5);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
 }

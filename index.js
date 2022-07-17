@@ -298,13 +298,13 @@ function updateTime() {
     
         switch(randNum) {
             case 1:
-                computer = "ROCK";
+                computer = "✊";
                 break;
             case 2:
-                computer = "PAPER";
+                computer = "✋";
                 break;
             case 3:
-                computer = "SCISSORS";
+                computer = "✌️";
                 break;
         }
     }
@@ -312,14 +312,14 @@ function updateTime() {
         if(player == computer) {
             return "Draw!"
         }
-        else if(computer == "ROCK") {
-            return (player == "PAPER") ? "You win!" : "You lose!";
+        else if(computer == "✊") {
+            return (player == "✋") ? "You win!" : "You lose! 💩";
         }
-        else if(computer == "PAPER") {
-            return (player == "SCISSORS") ? "You win!" : "You lose!";
+        else if(computer == "✋") {
+            return (player == "✌️") ? "You win!" : "You lose! 💩";
         }
-        else if(computer == "SCISSORS") {
-            return (player == "ROCK") ? "You win!" : "You lose!";
+        else if(computer == "✌️") {
+            return (player == "✊") ? "You win!" : "You lose! 💩";
         }
     }
 }
