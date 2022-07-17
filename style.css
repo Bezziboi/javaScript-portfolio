@@ -210,6 +210,9 @@ body {
 .choiceBtn:hover{
     transform: scale(1.2);
 }
+.choiceBtn:active{
+    transform: scale(1.1);
+}
 #rpsGame{
     font-family: cursive, 'Brush Script MT';
     border: 0;
