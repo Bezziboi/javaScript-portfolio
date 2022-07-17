@@ -62,6 +62,8 @@ document.getElementById("rollBtn").onclick = function() {
 
 
 
+
+
 {
     let guessAnswer = document.getElementById("guessAnswer");
 const answer = Math.floor(Math.random() * 10 + 1);
@@ -207,11 +209,11 @@ function updateTime() {
     
     choiceBtn.forEach(button => button.addEventListener("click", () => {
     
-        player = button.textContent;
+        player = button.innerHTML;
         computerTurn();
-        playerText.textContent = `Player: ${player}`;
-        computerText.textContent = `Computer: ${computer}`;
-        resultText.textContent = checkWinner();
+        playerText.innerHTML = `Player: ${player}`;
+        computerText.innerHTML = `Computer: ${computer}`;
+        resultText.innerHTML = checkWinner();
     }))
     
     function computerTurn() {
