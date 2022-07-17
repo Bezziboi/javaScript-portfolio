@@ -283,7 +283,6 @@ function updateTime() {
     
     let player;
     let computer;
-    let result;
     
     choiceBtn.forEach(button => button.addEventListener("click", () => {
     

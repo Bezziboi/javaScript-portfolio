@@ -167,3 +167,64 @@ body {
         vertical-align: bottom;
         position: relative;
 }
+
+#timeContainer{
+    text-align: center;
+    border: 3px solid;
+    border-radius: 25px;
+    background-color: #222222;
+}
+#timeDisplay{
+    font-size: 53px;
+    padding: 18px;
+    color: #40c437;
+    font-family: consolas, monospace;
+}
+.timerBtn{
+    width: 80px;
+    height: 30px;
+    border: 3px solid;
+    border-radius: 12px;
+    background-color: #333333;
+    color: white;
+    cursor: pointer;
+    font-family: consolas, monospace;
+    margin-bottom: 5px;
+    transition: all 0.3s;
+}
+.timerBtn:hover{
+    opacity: 0.8;
+}
+.timerBtn:active{
+    opacity: 0.6;
+}
+
+.choiceBtn{
+    line-height: 30px;
+    width: 115px;
+    font-family: cursive, 'Brush Script MT';
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+.choiceBtn:hover{
+    opacity: 0.8;
+}
+.choiceBtn:active{
+    opacity: 0.6;
+}
+#rpsGame{
+    font-family: cursive, 'Brush Script MT';
+    border: 3px solid;
+    border-radius: 25px;
+    padding: 10px;
+    background-color: lightgrey;
+    text-align: center;
+}
+#playerText{
+    color: rgb(14, 14, 177);
+}
+#computerText{
+    color: rgb(173, 7, 7);
+}
