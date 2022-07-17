@@ -224,15 +224,15 @@ let milsecs = 0;
 startBtn.addEventListener("click", () => {
     if(paused) {
         paused = false;
-        startTime = Date.now()-elapsedTime;
-        intervalId = setInterval(updateTime, 1)
+        startTime = Date.now() - elapsedTime;
+        intervalId = setInterval(updateTime, 10)
     }
 });
 
 pauseBtn.addEventListener("click", () => {
     if(!paused) {
         paused = true;
-        elapsedTime = Date.now()-startTime;
+        elapsedTime = Date.now() - startTime;
         clearInterval(intervalId);
     }
 });
@@ -251,9 +251,9 @@ resetBtn.addEventListener("click", () => {
 });
 
 function updateTime() {
-    elapsedTime = Date.now()-startTime;
+    elapsedTime = Date.now() - startTime;
 
-    milsecs = Math.floor(elapsedTime % 60);
+    milsecs = Math.floor((elapsedTime / 1000) * 1000 % 1000);
     secs = Math.floor((elapsedTime / 1000) % 60);
     mins = Math.floor((elapsedTime / (1000 * 60)) % 60);
     hrs = Math.floor((elapsedTime / (1000 * 60 * 60)) % 60);
@@ -269,4 +269,58 @@ function updateTime() {
         return (("0") + unit).length > 2 ? unit : "0" + unit;
     }
 }
+}
+
+
+
+
+
+{
+    const playerText = document.querySelector("#playerText");
+    const computerText = document.querySelector("#computerText");
+    const resultText = document.querySelector("#resultText");
+    const choiceBtn = document.querySelectorAll(".choiceBtn");
+    
+    let player;
+    let computer;
+    let result;
+    
+    choiceBtn.forEach(button => button.addEventListener("click", () => {
+    
+        player = button.textContent;
+        computerTurn();
+        playerText.textContent = `Player: ${player}`;
+        computerText.textContent = `Computer: ${computer}`;
+        resultText.textContent = checkWinner();
+    }))
+    
+    function computerTurn() {
+        const randNum = Math.floor(Math.random() * 3) + 1;
+    
+        switch(randNum) {
+            case 1:
+                computer = "ROCK";
+                break;
+            case 2:
+                computer = "PAPER";
+                break;
+            case 3:
+                computer = "SCISSORS";
+                break;
+        }
+    }
+    function checkWinner() {
+        if(player == computer) {
+            return "Draw!"
+        }
+        else if(computer == "ROCK") {
+            return (player == "PAPER") ? "You win!" : "You lose!";
+        }
+        else if(computer == "PAPER") {
+            return (player == "SCISSORS") ? "You win!" : "You lose!";
+        }
+        else if(computer == "SCISSORS") {
+            return (player == "ROCK") ? "You win!" : "You lose!";
+        }
+    }
 }
